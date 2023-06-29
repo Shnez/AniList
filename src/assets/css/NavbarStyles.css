@@ -5,12 +5,14 @@
     background-color: #313131;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease-in-out
 }
 
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s ease-in-out;
 }
 
 #navbar li {
@@ -63,12 +65,10 @@
         background: #313131;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 40px 0 0 10px;
-        transition: 0.2 ease in;
     }
 
     #navbar.active {
         right: 0px;
-        transition: 0.2s ease-in;
     }
 
     #navbar li{
