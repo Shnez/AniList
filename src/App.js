@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
   const [animeList, SetAnimeList] = useState([]);
@@ -42,8 +43,20 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-		  <Header />
-      <div className="content-wrap">
+      <div className='content-wrap'>
+        <Routes>
+        <Route path='/' element={<Header />}/>
+        <Route path='/topAnime' element={<Sidebar topAnime={topAnime}/>}/>
+        <Route path='/search' 
+          element={<MainContent 
+          HandleSearch = {HandleSearch}
+          search={search}
+          SetSearch={SetSearch}
+          animeList={animeList}/>}/>
+      </Routes>
+      </div>
+      
+      {/* <div className="content-wrap">
           <Sidebar 
             topAnime=
             {topAnime} />
@@ -52,7 +65,7 @@ function App() {
               search={search}
               SetSearch={SetSearch}
               animeList={animeList}/>
-      </div>
+      </div> */}
     </div>
   );
 }

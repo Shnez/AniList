@@ -18,9 +18,9 @@ function Navbar() {
                 </a>
                 <div>
                     <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Search</a></li>
-                        <li><a href="index.html">Top Anime</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/search">Search</a></li>
+                        <li><a href="/topAnime">Top Anime</a></li>
                     </ul>
                 </div>
 

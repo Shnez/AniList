@@ -62,7 +62,8 @@ header h1 strong {
 }
 .content-wrap main .main-head .search-box {
   display: flex;
-  justify-content: flex-end;
+  
+  align-content: center;
   flex: 1 1 0%;
 }
 .content-wrap main .main-head .search-box input {
